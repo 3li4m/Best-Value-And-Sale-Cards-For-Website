@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+}
+
+.card-one{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.15);
+}
+
+.card-one span{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 150px;
+    height: 150px;
+    /* background: #f00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-one span::before{
+    content: 'Best Vaue';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background: #62baea;
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.1em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card-one span::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #4a98bf;
+    z-index: -1;
+    box-shadow: 140px -140px #4a98bf;
+}
+
+.card-two{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.15);
+    
+}
+
+.card-two i{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f00;
+    width: 100%;
+    height: 40px;
+    left: -15px;
+    top: 15px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+}
+
+.card-two i::before{
+    content: '';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f00;
+    width: 15px;
+    height: 15px;
+    left: 0px;
+    top: 35px;
+}
+
+.card-two i::after{
+    content: '';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c20000;
+    width: 15px;
+    height: 20px;
+    left: 0px;
+    top: 40px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    z-index: 2;
+}
+
+.fireSale{
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.1em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
